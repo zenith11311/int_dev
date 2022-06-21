@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Home from './Home';
 import Wave from './Wave';
 import Gradation from './Gradation';
+import Raining from './Raining';
+import Snowing from './Snowing';
 
 import './index.css';
 
@@ -18,6 +20,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
                     <Route exact path="/home"       element={<Home />}/>
                     <Route exact path="/wave"       element={<Wave />}/>
                     <Route exact path="/gradation"  element={<Gradation />}/>
+                    <Route exact path="/raining"    element={<Raining />}/>
+                    <Route exact path="/snowing"    element={<Snowing />}/>
                 </Routes>
         </BrowserRouter>
     </React.StrictMode>

@@ -3,14 +3,14 @@ import { useState, } from "react";
 
 import "./index.css";
 
-const menus_g = [ "Home", "Wave", "Gradation", ];
+const menus_g = [ "Home", "Wave", "Gradation", "Raining", "Snowing", ];
 
 const Menu = (props) => {
 
     const [ click, setClick ] = useState(false);
 
     return (
-        <div className={`menu ${click ? "text-white":"text-dark"}`}>
+        <div className={`menu ${(click || props.light) ? "text-white":"text-dark"}`} onClick={(e)=>{e.stopPropagation()}}>
             {
                 click && (
                     <div className="opened p-2">
