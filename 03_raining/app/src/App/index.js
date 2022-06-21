@@ -64,7 +64,7 @@ const App = () => {
                 </div>
                 <audio
                     autoPlay
-                    preload="true"
+                    preload="auto"
                     ref={audioRef}
                     style={{display:"none",}}
                     src={`/resources/${sound}`}/>
