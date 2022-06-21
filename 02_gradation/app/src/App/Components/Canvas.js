@@ -25,4 +25,4 @@ const Canvas = () => {
     )
 }
 
-export default Canvas
+export default Canvas;
